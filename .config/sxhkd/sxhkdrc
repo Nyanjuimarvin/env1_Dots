@@ -4,13 +4,13 @@
 
 # terminal emulator
 super + Return
-	/usr/bin/kitty
+	xfce4-terminal
 
 #My Apps
 
 #Firefox
 alt + b
-      firefox
+      brave-browser
       
 #Android Studio
 alt + a
@@ -18,7 +18,7 @@ alt + a
       
 #Emacs
 alt + e
-      emacsclient
+      emacs
 #Chrome
 alt + c
       google-chrome
@@ -33,7 +33,7 @@ alt + i
       intellijidea-ce
 #Files
 alt + f
-      files
+      firefox
 #Lutris
 alt + l
       lutris
@@ -44,7 +44,7 @@ alt + d
 
 
 # program launcher
-super + @space
+super + space
 	dmenu_run
 
 # make sxhkd reload its configuration files:
@@ -156,3 +156,35 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+	
+#Audio
+XF86AudioRaiseVolume
+	amixer set Master 2%+
+XF86AudioLowerVolume
+	amixer set Master 2%-
+XF86AudioMute
+	amixer set Master {mute, unmute}
+	
+
+
+# Screenshot :: Scrot/Maim
+@Print
+	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
+
+# Fullscreen screenshot -> scrot
+ctrl + @Print
+	scrot -d1 && mv *.png ~/Pictures/Screenshots/
+
+# Brightness -> brightnessctl
+#
+XF86MonBrightness{Up,Down}
+	brightnessctl s 50{+,-}
+	
+# lockscreen -> betterlockscreen
+super + x
+	betterlockscreen -l dim
+	
+#Keyboards
+super + z
+   $HOME/keyboardlayout.sh
+
