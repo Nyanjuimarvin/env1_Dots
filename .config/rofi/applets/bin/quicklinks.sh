@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-## Author  : Aditya Shakya (adi1090x)
-## Github  : @adi1090x
-#
 ## Applets : Quick Links
 
 # Import Current Theme
@@ -36,6 +33,7 @@ if [[ "$layout" == 'NO' ]]; then
 	option_4=" Github"
 	option_5=" Reddit"
 	option_6=" Twitter"
+	option_7=" Linkedin"
 else
 	option_1=""
 	option_2=""
@@ -43,6 +41,7 @@ else
 	option_4=""
 	option_5=""
 	option_6=""
+	option_7=""
 fi
 
 # Rofi CMD

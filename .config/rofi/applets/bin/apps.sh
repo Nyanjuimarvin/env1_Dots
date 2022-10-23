@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-## Author  : Aditya Shakya (adi1090x)
-## Github  : @adi1090x
-#
 ## Applets : Favorite Applications
 
 # Import Current Theme
@@ -11,7 +8,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Applications'
-mesg="Installed Packages : `pacman -Q | wc -l` (pacman)"
+mesg="Installed Packages : `dnf list installed | wc -l`(rpm),`flatpak list | wc -l`(flatpak)"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
@@ -22,9 +19,9 @@ elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
 fi
 
 # CMDs (add your apps here)
-term_cmd='alacritty'
+term_cmd='kitty'
 file_cmd='thunar'
-text_cmd='geany'
+text_cmd='emacs'
 web_cmd='firefox'
 music_cmd='alacritty -e ncmpcpp'
 setting_cmd='xfce4-settings-manager'

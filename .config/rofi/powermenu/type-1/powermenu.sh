@@ -1,17 +1,10 @@
-#!/usr/bin/env bash
-
-## Author : Aditya Shakya (adi1090x)
-## Github : @adi1090x
-#
-## Rofi   : Power Menu
-#
 ## Available Styles
 #
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-1"
-theme='style-5'
+theme='style-4'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
@@ -23,9 +16,9 @@ reboot=' Reboot'
 lock=' Lock'
 suspend=' Suspend'
 logout=' Logout'
-yes=' Yes'
+yes=' Yes'
 no=' No'
-
+#
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
@@ -95,11 +88,12 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
-		fi
+		#if [[ -x '/usr/bin/betterlockscreen' ]]; then
+		
+		betterlockscreen -l dim
+		#elif [[ -x '/usr/bin/i3lock' ]]; then
+		#	i3lock
+		#fi
         ;;
     $suspend)
 		run_cmd --suspend
