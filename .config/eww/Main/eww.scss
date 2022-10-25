@@ -103,7 +103,7 @@
 }
 
 .critical-stuff-box {
-  margin: 20px 20px 0px 0px;
+  margin: 15px 20px 0px 0px;
   border-radius: 15px;
   background-color: $gray-alt;
   min-width: 150px;
@@ -117,7 +117,7 @@
   color: $red;
   background-color: $gray;
   font-size: 12px;
-  margin: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
 }
 
 .critical-notification-text {
@@ -140,20 +140,20 @@
 }
 
 .music-title {
-  margin: 20px 0px 0px 20px;
+  margin: 10px 0px 0px 15px;
   font-size: 19px;
   font-weight: bold;
   color: $fg;
 }
 
 .music-artist {
-  margin: 10px 0px 0px 20px;
+  margin: 10px 0px 0px 15px;
   font-size: 15px;
   color: $fg-alt;
 }
 
 .music-length {
-  margin: 90px 0px 0px 20px;
+  margin: 70px 0px 0px 20px;
   font-size: 12px;
   font-weight: bold;
   color: $fg-alt;
@@ -166,9 +166,9 @@
 }
 
 .music-controls-box {
-  margin: 20px 0px 0px 20px;
+  margin: 10px 0px 0px 10px;
   background-color: $gray-alt;
-  padding: 0px 13px 0px 13px;
+  padding: 0px 10px 0px 10px;
   border-radius: 15px;
   min-width: 25px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
@@ -176,11 +176,11 @@
 
 .music-next,
 .music-previous {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .music-pp {
-  font-size: 30px;
+  font-size: 22px;
   color: $fg;
 }
 
@@ -221,7 +221,7 @@
 }
 
 .notification-headers {
-  padding: 20px 45px 20px 32px;
+  padding: 10px 45px 10px 32px;
   color: $blue;
 }
 
@@ -230,7 +230,7 @@
   font-weight: bold;
   font-family: "JetBrainsMono Nerd Font";
   text-shadow: 0px 0px 10px #000000;
-  padding: 0px 160px 0px 160px;
+  padding: 0px 120px 0px 120px;
 }
 
 .notification-card-eventbox {
@@ -240,10 +240,11 @@
 
 .notification-headers-clear {
   //margin: 20px 25px 25px 0px;
+  margin: 10px 15px 15px 0px;
   background-color: $gray-alt;
   border-radius: 15px;
-  padding: 15px 15px 13px 15px;
-  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  font-size: 13px;
   font-weight: bold;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
@@ -260,7 +261,7 @@
 .notifications-empty-label {
   padding-top: 10px;
   color: $red;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   padding-left: 80px;
   padding-right: 80px;
@@ -271,14 +272,14 @@
 }
 
 .notification-card-box {
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .notification-card-LOW {
   background-color: $gray-alt;
   color: $yellow;
   padding: 0px 10px 0px 8px;
-  font-size: 30;
+  font-size: 20;
   border-radius: 15px;
 }
 
@@ -286,7 +287,7 @@
   background-color: $gray-alt;
   color: $blue;
   padding: 0px 10px 0px 8px;
-  font-size: 30;
+  font-size: 20;
   border-radius: 15px;
 }
 
@@ -294,7 +295,7 @@
   background-color: $gray-alt;
   color: $red;
   padding: 0px 10px 0px 8px;
-  font-size: 30;
+  font-size: 20;
   border-radius: 15px;
 }
 
@@ -308,7 +309,7 @@
 
 .notification-summary {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 16px;
   padding-bottom: 10px;
   color: $fg;
 }
@@ -316,19 +317,20 @@
 .notification-card-notify-close {
   color: $red;
   padding: 2px 2px 2px 2px;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .notification-body {
+  font-weight: bold;
   color: $fg;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .notification-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 40px;
+  min-width: 60px;
   border-radius: 10px;
   margin: 16px 0px 16px 20px;
 }
@@ -340,7 +342,7 @@
 }
 
 .notification-app-name {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: bold;
   color: $fg;
 }

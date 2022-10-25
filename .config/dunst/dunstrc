@@ -24,16 +24,16 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 250
+    width = 370
 
     # The maximum height of a single notification, excluding the frame.
-    height = 500
+    height = 300
 
     # Position the notification in the top right corner
     origin = bottom-right
 
     # Offset from the origin
-    offset = 50x50
+    offset = 10x35
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -196,10 +196,10 @@
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
-    min_icon_size = 128
+    min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 300
+    max_icon_size = 80
 
     # Paths to default icons.
     icon_path = /usr/share/icons/gnome/128x128/status/:/usr/share/icons/gnome/128x128/devices/
@@ -238,7 +238,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 15
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -353,7 +353,7 @@
 #    set_category
 #    timeout
 #    urgency
-#    icon_position
+    icon_position = left
 #    skip_display
 #    history_ignore
 #    action_name

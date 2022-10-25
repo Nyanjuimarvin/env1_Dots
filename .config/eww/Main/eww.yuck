@@ -45,16 +45,16 @@
             (label :class "stats-header" :halign "start" :text "Stats")
             (box :class "volume-stats" :hexpand "false" :vexpand "false" :space-evenly "false"
               (label :tooltip "${volume}%" :class "volume-icon" :text "󰕾")
-              (scale :min 0 :max 101 :active false :value {volume == "" ? 0 : volume} :class "volume-scale" :width 250))
+              (scale :min 0 :max 101 :active false :value {volume == "" ? 0 : volume} :class "volume-scale" :width 200))
             (box :class "brightness-stats" :hexpand "false" :vexpand "false" :space-evenly "false"
               (label :tooltip "${brightness}%" :class "brightness-icon" :text "󰃠")
-              (scale :min 0 :max 101 :active false :value {brightness == "" ? 0 : brightness} :class "brightness-scale" :width 250))
+              (scale :min 0 :max 101 :active false :value {brightness == "" ? 0 : brightness} :class "brightness-scale" :width 200))
             (box :class "cpu-stats" :hexpand "false" :vexpand "false" :space-evenly "false"
               (label :tooltip "${cpu}%" :class "cpu-icon" :text "󰘚")
-              (scale :min 0 :max 101 :active false :value {cpu == "" ? 0 : cpu} :class "cpu-scale" :width 250))
+              (scale :min 0 :max 101 :active false :value {cpu == "" ? 0 : cpu} :class "cpu-scale" :width 200))
             (box :class "memory-stats" :hexpand "false" :vexpand "false" :space-evenly "false"
               (label :tooltip "${memory}%" :class "memory-icon" :text "󰍛")
-              (scale :min 0 :max 101 :active false :value {memory == "" ? 0 : memory} :class "memory-scale" :width 250)))
+              (scale :min 0 :max 101 :active false :value {memory == "" ? 0 : memory} :class "memory-scale" :width 200)))
           (box :class "critical-stuff-box" :space-evenly "false" :hexpand "false" :orientation "v"
             (box :class "critical-header" :space-evenly false :vexpand true :halign "center" :spacing 25
               (circular-progress :start-at 90 :class "critical-notification-circle" :value {notifications-crits == "" ? 0 : notifications-crits} :thickness 10 "${notifications-crits}"))
@@ -126,5 +126,5 @@
   :windowtype "normal"
   :wm-ignore true
   :monitor 0
-  :geometry (geometry :x 76 :width 1150 :height 600 :y 35 :x 120)
+  :geometry (geometry :x 76 :width 1150 :height 610 :y 30 :x 150)
   (main))

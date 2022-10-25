@@ -10,6 +10,7 @@ cache_weather_icon=${cache_dir}/weather-icon
 ## Weather data
 ##KEY="7e6ed49a1a7b802ad1299faa3a5f008d"
 KEY="bfece931bcd9d9068a005df4bf2b09fc"
+KEY="a83bbddb384f661117b2fa19fffc78f1"
 ID="184742"
 UNIT="metric"	# Available options : 'metric' or 'imperial'
 
@@ -22,7 +23,8 @@ fi
 get_weather_data() {
 	##weather=`curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT""`
 	##weather=`curl -sf https://api.openweathermap.org/data/2.5/weather?id=184742&appid=a83bbddb384f661117b2fa19fffc78f1`
-	weather=`curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT""`
+	##weather=`curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT""`
+	weather=`curl -sf "https://api.openweathermap.org/data/2.5/weather?id="$ID"&appid="$KEY"&units="UNIT""`
 	echo ${weather}
 
 	if [ ! -z "$weather" ]; then
