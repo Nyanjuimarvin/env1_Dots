@@ -92,7 +92,7 @@ function compile_caches() { tr '\n' ' ' < "$DUNST_LOG" }
 function make_literal() {
   local caches="$(compile_caches)"
   [[ "$caches" == "" ]] \
-    && print '(box :class "notifications-empty-box" :height 500 :orientation "vertical" :space-evenly "false" (image :class "notifications-empty-banner" :valign "end" :vexpand true :path "Main/images/no-notifications.svg" :image-width 100 :image-height 100) (label :vexpand true :valign "start" :wrap true :class "notifications-empty-label" :text "No Notifications :("))' \
+    && print '(box :class "notifications-empty-box" :height 520 :orientation "vertical" :space-evenly "false" (image :class "notifications-empty-banner" :valign "end" :vexpand true :path "Main/images/no-notifications.svg" :image-width 100 :image-height 100) (label :vexpand true :valign "start" :wrap true :class "notifications-empty-label" :text "No Notifications :("))' \
     || print "(scroll :height 520 :vscroll true (box :orientation 'vertical' :class 'notification-scroll-box' :spacing 20 :space-evenly 'false' $caches))"
 }
 
